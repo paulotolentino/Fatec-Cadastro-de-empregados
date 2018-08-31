@@ -1,16 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cadastro.de.empregados;
-/**
- *
- * @author paulo
- */
+// @author paulo
 public class Empregado {
-    
-    
+
     private static int count = 1;
     
     private int codigo;
@@ -47,11 +38,5 @@ public class Empregado {
 
     public void setSalario(double salario) {
         this.salario = salario;
-    }
-
-    
-    
-    
-    
-    
+    }   
 }
