@@ -1,7 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package cadastro.de.empregados;
-// @author paulo
-public class Empregado {
-
+/**
+ *
+ * @author paulo
+ */
+public class Empregado{
+    
+    
     private static int count = 1;
     
     private int codigo;
@@ -9,6 +18,11 @@ public class Empregado {
     private String departamento;
     private double salario;
 
+    public Empregado(String nome) {
+        this.nome = nome;
+        codigo = count++;
+    }
+    
     public Empregado(String nome, String departamento, double salario) {
         this.nome = nome;
         this.departamento = departamento;
@@ -38,5 +52,10 @@ public class Empregado {
 
     public void setSalario(double salario) {
         this.salario = salario;
-    }   
+    }
+    
+    public void mostraEmp(){
+        System.out.println(codigo + ": " + nome + ", " + departamento);
+    }
+    
 }
